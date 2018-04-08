@@ -1,11 +1,14 @@
 package com.example.foodordering;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.IdRes;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -86,6 +89,8 @@ public class Activity_Register extends BaseActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.register:
+                pg.setMessage("正在注册账号信息，请稍后...");
+                pg.show();
                 NickName = etNickName.getText().toString();
                 PhoneNumber = etPhoneNumber.getText().toString();
                 userName = etUserName.getText().toString();
@@ -94,13 +99,16 @@ public class Activity_Register extends BaseActivity implements View.OnClickListe
                 Address = etAddress.getText().toString();
                 if (PhoneNumber.isEmpty() || pwd.isEmpty() || rePwd.isEmpty() || NickName.isEmpty() || Address.isEmpty() || userName.isEmpty()) {
                     Toast.makeText(this, "请将信息填完整！", Toast.LENGTH_SHORT).show();
+                    pg.dismiss();
                     return;
                 }
                 if (!pwd.equals(rePwd)) {
                     Toast.makeText(this, "密码和确认密码不一致，请重新输入！", Toast.LENGTH_SHORT).show();
+                    pg.dismiss();
                     return;
                 }
                 if (!Util.checkNetwork(this)) {
+                    pg.dismiss();
                     return;
                 }
                 if (Sex == null || Sex.isEmpty()) {
@@ -110,8 +118,6 @@ public class Activity_Register extends BaseActivity implements View.OnClickListe
                 new Thread(){
                     @Override
                     public void run() {
-                        pg.setMessage("正在注册账号信息，请稍后...");
-                        pg.show();
                         try {
                             postForm = PostUtility.postRegister(PhoneNumber.trim(), userName, pwd, NickName, Sex, Address);
                             handler.post(runnableRegister);
@@ -119,7 +125,7 @@ public class Activity_Register extends BaseActivity implements View.OnClickListe
                             e.printStackTrace();
                         }
                     }
-                };
+                }.start();
 
                 break;
             default:
@@ -130,16 +136,32 @@ public class Activity_Register extends BaseActivity implements View.OnClickListe
         @Override
         public void run() {
             pg.dismiss();
+//            Log.e("*****",postForm);
+            if (postForm == null || postForm.length() > 100) {
+                Util.showToast(Activity_Register.this, "注册失败，请重试！");
+                return;
+            }
             Gson gson = new Gson();
             Status status = gson.fromJson(postForm, Status.class);
-            int statusCode = status.getStatusCode();
-            if (statusCode == 200) {
-                Intent intent = new Intent(Activity_Register.this, Activity_Login.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
-            }
-            Toast.makeText(Activity_Register.this, status.getStatusDescription(), Toast.LENGTH_SHORT).show();
+            final int statusCode = status.getStatusCode();
+            final AlertDialog.Builder builder = new AlertDialog.Builder(Activity_Register.this);
+            builder.setTitle("提示");
+            builder.setCancelable(false);
+            builder.setMessage("账号："+PhoneNumber+" "+status.getStatusDescription());
+            builder.setPositiveButton(android.R.string.ok,
+                    new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog,
+                                            int which) {
+                            if (statusCode == 200) {
+                                Intent intent = new Intent(Activity_Register.this, Activity_Login.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
+                                finish();
+                            }
+                        }
+                    });
+            builder.create().show();
         }
     };
 
