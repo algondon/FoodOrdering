@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="￥ 100"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/food_price"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tvMinus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/button_minus"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:minWidth="20dp"
+            android:text="0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAdd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/button_add"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

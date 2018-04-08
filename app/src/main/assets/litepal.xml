@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--数据库名-->
+    <dbname value="FoodOrdering"></dbname>
+    <!--数据库版本号-->
+    <version value="1"></version>
+    <!--list标签用于指定所有的映射模型-->
+    <list>
+        <mapping class="com.example.foodordering.bean.Foods"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color> <!-- 白色 -->
+    <color name="gray">#808080</color> <!-- 灰色 -->
+    <color name="blue">#5ecbd7</color> <!-- 蓝色 -->
+    <color name="darkgreen">#008F7D</color>
+    <color name="common_color_2">#555555</color>
+    <color name="red">#FF3300</color>
+    <color name="color_333333s">#e0333333</color>
+
+    <!--通知栏和标题颜色-->
+    <color name="color_title">#ff7700</color>
+
+    <!--首页tab未点击-->
+    <color name="color_tab_false">#898989</color>
+    <color name="color_tab_true">#008de1</color>
+    <color name="color_tian_blue">#00bfff</color>
+
+    <!--1dp的线条的颜色-->
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_tab_d0d0d0">#d0d0d0</color>
+    <color name="background_tab_pressed">#EFEFEF</color>
+    <color name="transparent">#00000000</color>
+
+    <!--各种黑色-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="wtm_color_title">#ff7700</color>
+    <color name="black">#000000</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_e3e3e3">#e3e3e3</color>
+
+    <!--Zxing-->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+
+    <!--Setting-->
+    <color name="white_bg">#FFFFFF</color>
+    <color name="dark_gray_bg">#F5F5F5</color>
+    <color name="light_gray_bg">#EDEDED</color>
+    <color name="divider">#DCDCDC</color>
+    <color name="primary_text">#424242</color>
+    <color name="secondary_text">#9e9e9e</color>
+
+    <!--address-->
+    <color name="blue_text">#3599E8</color>
+
+    <!--update_address-->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+
+    <!--login-->
+    <color name="login_bg_color">#ffe6e6e6</color>
+
+    <color name="orange">#FF9800</color>
+
+    <!--天气-->
+    <color name="home_custom_button_bg_color">#11ffffff</color>
+    <color name="home_inside_divider_color">#22ffffff</color>
+    <color name="home_item_divider_color">#55ffffff</color>
+    <color name="home_text_color">@color/white</color>
+    <color name="home_text_color_dark">#aaffffff</color>
+
+    <!-- sky color -->
+    <color name="clear_sky_day_end">#ff78b1d7</color>
+    <color name="clear_sky_day_start">#ff1f99d6</color>
+    <color name="clear_sky_night_end">#ff1a1835</color>
+    <color name="clear_sky_night_start">#ff0b0933</color>
+    <color name="cloudy_sky_day_end">#ff78b1d7</color>
+    <color name="cloudy_sky_day_start">#ff1f99d6</color>
+    <color name="cloudy_sky_night_end">#ff1a1835</color>
+    <color name="cloudy_sky_night_start">#ff0b0933</color>
+    <color name="rain_sky_day_end">#ff2e526c</color>
+    <color name="rain_sky_day_start">#ff4f687b</color>
+    <color name="rain_sky_night_end">#ff08131b</color>
+    <color name="rain_sky_night_start">#ff0b1c29</color>
+    <color name="haze_sky_day_end">#ff86754a</color>
+    <color name="haze_sky_day_start">#ff6e6956</color>
+    <color name="haze_sky_night_end">#ff35301e</color>
+    <color name="haze_sky_night_start">#ff292822</color>
+    <color name="overcast_sky_day_end">#ff6e7376</color>
+    <color name="overcast_sky_day_start">#ff313638</color>
+    <color name="overcast_sky_night_end">#ff1c1921</color>
+    <color name="overcast_sky_night_start">#ff201f25</color>
+    <color name="fog_sky_day_end">#ff598caf</color>
+    <color name="fog_sky_day_start">#ff1880a6</color>
+    <color name="fog_sky_night_end">#ff1a1835</color>
+    <color name="fog_sky_night_start">#ff0b0933</color>
+</resources>

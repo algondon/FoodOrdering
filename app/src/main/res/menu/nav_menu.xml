@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_comment"
+            android:icon="@mipmap/ic_comment"
+            android:title="我的评价" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@mipmap/nav_location"
+            android:title="我的地址" />
+        <item
+            android:id="@+id/nav_monitor"
+            android:icon="@mipmap/nav_task"
+            android:title="视频监控" />
+        <item
+            android:id="@+id/nav_business"
+            android:icon="@mipmap/nav_friends"
+            android:title="商家信息" />
+        <item
+            android:id="@+id/nav_customer_service"
+            android:icon="@mipmap/nav_location"
+            android:title="客服中心"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_white_24dp"
+            android:title="分享我们" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@mipmap/nav_friends"
+            android:visible="false"
+            android:title="关于我们" />
+        <item
+            android:id="@+id/nav_food_delivery"
+            android:icon="@drawable/ic_drawer_help"
+            android:visible="true"
+            android:title="我去送餐" />
+
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@mipmap/nav_task"
+                android:title="退出登录" />
+        </menu>
+    </item>
+</menu>

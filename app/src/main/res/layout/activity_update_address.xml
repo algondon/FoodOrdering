@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_major"
+        android:background="@drawable/btn_radius_all_normal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/spacing_major"
+        android:paddingRight="@dimen/spacing_major">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="联系人"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_receiveName"
+                style="@style/Widget.LazyOrder.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cell_normal"
+                android:background="@null"
+                android:hint="@string/hint_edit_name" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_normal"
+            android:gravity="center_vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/sel_common_check_bg"
+                    android:paddingLeft="@dimen/spacing_micro"
+                    android:text="@string/label_male"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/font_normal" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_major"
+                    android:layout_marginStart="@dimen/spacing_major"
+                    android:button="@drawable/sel_common_check_bg"
+                    android:paddingLeft="@dimen/spacing_micro"
+                    android:text="@string/label_female"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/font_normal" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="联系电话"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/Widget.LazyOrder.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cell_normal"
+                android:background="@null"
+                android:hint="@string/hint_edit_phone"
+                android:inputType="phone"
+                android:maxLength="11" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/ly_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="经纬度"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/Widget.LazyOrder.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cell_normal"
+                android:background="@null"
+                android:text="点击此处打开地图"
+                android:textColor="@color/gray"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="false"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="收餐地址"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                style="@style/Widget.LazyOrder.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cell_normal"
+                android:background="@null"
+                android:hint="@string/hint_edit_address_summary" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stroke"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_detail_address"
+                style="@style/Widget.LazyOrder.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cell_normal"
+                android:layout_marginLeft="75dp"
+                android:background="@null"
+                android:hint="@string/hint_edit_address_detail" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submitAddress"
+        style="@style/Widget.LazyOrder.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cell_normal"
+        android:layout_marginLeft="@dimen/spacing_major"
+        android:layout_marginRight="@dimen/spacing_major"
+        android:text="@string/btn_confirm_add" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodordering">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- for mta statistics -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Zxing -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- call -->
+    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
+
+
+    <!-- 访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--导航-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".application.FoodOrderingApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--百度地图ak-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="F6NWFi7tK2PvSpHk201uazFn3W4V6p0x" />
+
+        <activity android:name=".Activity_Main" />
+        <activity android:name=".Activity_MyComment" />
+        <activity
+            android:name=".Activity_Balance"
+            android:label="@string/title_activity_balance"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activity_VideoSurveillance" />
+        <activity android:name=".Activity_Payment" />
+        <activity android:name=".Activity_BusinessInfo" />
+        <activity android:name=".Activity_Address" />
+        <activity android:name=".Activity_AboutUs" />
+        <activity android:name=".Activity_Customer_Service" />
+        <activity android:name=".Activity_Login" />
+        <activity android:name=".Activity_Register" />
+        <activity android:name=".Activity_FoodsDetails" />
+        <activity android:name=".Activity_MyInformation" />
+        <activity android:name=".Activity_WaitComment" />
+        <activity android:name=".Activity_ChangeMyInfo" />
+        <activity android:name=".Activity_Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".Activity_OrderComplete" />
+        <activity android:name=".Activity_Search" />
+        <activity android:name=".Activity_QRcodeResult" />
+        <activity android:name=".Activity_Setting" />
+        <activity android:name=".Activity_Feedback" />
+        <activity android:name=".Activity_UpdateAddress" />
+        <activity android:name=".Activity_Remark" />
+        <activity android:name=".Activity_FoodsCategory" />
+        <activity android:name=".Activity_Location" />
+        <activity android:name=".Activity_FoodDelivery"></activity>
+
+        <!--定位用的service-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!--天气-->
+        <activity android:name=".weather.ui.WeatherActivity" />
+        <activity android:name=".weather.ui.AlarmActivity" />
+    </application>
+
+</manifest>
