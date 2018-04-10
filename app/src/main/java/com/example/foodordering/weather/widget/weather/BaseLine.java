@@ -3,7 +3,7 @@ package com.example.foodordering.weather.widget.weather;
 import java.util.Random;
 
 /**
- * Created by ghbha on 2016/5/16.
+ * Created by xch on 2018/3/10.
  */
 public abstract class BaseLine {
 

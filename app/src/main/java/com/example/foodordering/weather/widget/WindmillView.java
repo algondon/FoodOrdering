@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by ghbha on 2016/5/14.
+ * Created by xch on 2018/3/10.
  */
 public class WindmillView extends View {
 

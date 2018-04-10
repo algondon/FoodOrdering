@@ -11,7 +11,7 @@ import com.example.foodordering.weather.util.DateTimeUtil;
 
 
 /**
- * Created by ghbha on 2016/5/15.
+ * Created by xch on 2018/3/10.
  */
 public class SkyView extends FrameLayout {
 

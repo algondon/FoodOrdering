@@ -20,7 +20,7 @@ import com.example.foodordering.weather.dao.greendao.Zhishu;
 import com.example.foodordering.weather.dao.greendao.ZhishuDao;
 
 /**
- * Created by ghbha on 2016/5/14.
+ * Created by xch on 2018/3/10.
  */
 public class WeatherDao extends BaseLocalDao {
 

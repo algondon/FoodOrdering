@@ -29,7 +29,7 @@ import com.example.foodordering.weather.util.HttpRetriever;
 import com.example.foodordering.weather.util.NetworkUtil;
 
 /**
- * Created by xch
+ * Created by xch on 2018/3/10.
  */
 public class WeatherManager extends BaseManager {
     private WeatherDao weatherDao = new WeatherDao();

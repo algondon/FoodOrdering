@@ -15,7 +15,7 @@ import com.example.foodordering.weather.dao.greendao.HourForeCast;
 import com.example.foodordering.weather.util.ScreenUtil;
 
 /**
- * Created by ghbha on 2016/5/13.
+ * Created by xch on 2018/3/10.
  */
 public class HourForeCastView extends View {
 

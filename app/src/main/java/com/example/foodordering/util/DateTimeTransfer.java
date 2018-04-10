@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by yzjxiaoyue on 2017/5/29.
+ * Created by xch on 2017/5/29.
  */
 
 public class DateTimeTransfer {

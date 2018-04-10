@@ -18,7 +18,7 @@ import java.util.List;
 
 
 /**
- * Created by yzjxiaoyue on 2017/5/29.
+ * Created by xch on 2017/5/29.
  */
 
 public class Adapter_Comment extends RecyclerView.Adapter<Adapter_Comment.ViewHolder> {

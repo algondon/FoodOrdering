@@ -8,7 +8,7 @@ import com.example.foodordering.weather.dao.bean.City;
 import com.example.foodordering.weather.dao.greendao.DBOpenHelper;
 
 /**
- * Created by ghbha on 2016/4/27.
+ * Created by xch on 2018/3/10.
  */
 public class CityDao {
 

@@ -13,7 +13,7 @@ import com.example.foodordering.R;
 import com.example.foodordering.weather.dao.bean.OptDO;
 
 /**
- * Created by ghbha on 2016/2/14.
+ * Created by xch on 2018/3/10.
  */
 public class OptMenuAdapter extends BaseAdapter {
     private Activity context;

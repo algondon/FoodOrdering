@@ -1,7 +1,7 @@
 package com.example.foodordering.weather.dao.bean;
 
 /**
- * Created by ghbha on 2016/2/14.
+ * Created by xch on 2018/3/10.
  */
 public class OptDO {
     private int id;

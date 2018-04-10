@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by ghbha on 2016/4/27.
+ * Created by xch on 2018/3/10.
  */
 public class AssetsCopyUtil {
     /**

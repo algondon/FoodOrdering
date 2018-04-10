@@ -14,7 +14,7 @@ import java.util.List;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by yzjxiaoyue on 2017/4/2.
+ * Created by xch on 2017/4/2.
  */
 
 public class Requests implements RequestManager {

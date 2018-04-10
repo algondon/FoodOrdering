@@ -8,7 +8,7 @@ import com.example.foodordering.weather.util.Constant;
 
 
 /**
- * Created by Suda on 2015/11/16.
+ * Created by xch on 2018/3/10.
  */
 public abstract class BaseManager {
 

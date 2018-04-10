@@ -4,7 +4,7 @@ package com.example.foodordering.share;
 import com.xyzlf.share.library.interfaces.ShareConstant;
 
 /**
- * Created by zhanglifeng on 2016/6/22
+ * Created by xch on 2018/3/22
  */
 public class ShareCallBack {
 

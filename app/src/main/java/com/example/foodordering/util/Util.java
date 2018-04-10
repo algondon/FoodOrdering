@@ -8,7 +8,7 @@ import android.widget.Toast;
 import com.example.foodordering.Activity_Main;
 
 /**
- * Created by yzjxiaoyue on 2017/6/5.
+ * Created by xch on 2017/6/5.
  */
 
 public class Util {

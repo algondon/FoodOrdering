@@ -1,7 +1,7 @@
 package com.example.foodordering.bean;
 
 /**
- * Created by yzjxiaoyue on 2017/5/29.
+ * Created by xh on 2017/5/29.
  */
 
 public class Comment {

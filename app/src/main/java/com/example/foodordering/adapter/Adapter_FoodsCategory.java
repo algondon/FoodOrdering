@@ -21,8 +21,7 @@ import java.util.List;
 /**
  * 基本功能：右侧Adapter
  * 创建：王杰
- * 创建时间：16/4/14
- * 邮箱：w489657152@gmail.com
+ * 创建时间：2018/03/10
  */
 public class Adapter_FoodsCategory extends SectionedBaseAdapter {
 

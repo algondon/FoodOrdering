@@ -9,7 +9,7 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 /**
- * Created by 岳正江 on 2017/4/2.
+ * Created by xch on 2017/4/2.
  */
 
 public interface RequestManager {

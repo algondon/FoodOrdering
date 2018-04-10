@@ -7,7 +7,7 @@ import android.preference.PreferenceManager;
 import com.example.foodordering.bean.User;
 
 /**
- * Created by yzjxiaoyue on 2017/5/17.
+ * Created by xch on 2017/5/17.
  */
 
 public class GetUserData {

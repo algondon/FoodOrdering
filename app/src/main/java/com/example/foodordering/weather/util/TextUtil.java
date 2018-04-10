@@ -1,7 +1,7 @@
 package com.example.foodordering.weather.util;
 
 /**
- * Created by ghbha on 2016/5/9.
+ * Created by xch on 2018/3/10.
  */
 public class TextUtil {
     public static String getFormatArea(String areaName) {

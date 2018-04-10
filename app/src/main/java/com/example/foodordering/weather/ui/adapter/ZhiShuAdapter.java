@@ -15,7 +15,7 @@ import com.example.foodordering.weather.dao.greendao.Zhishu;
 import com.example.foodordering.weather.util.Constant;
 
 /**
- * Created by ghbha on 2016/5/16.
+ * Created by xch on 2018/3/10.
  */
 public class ZhiShuAdapter extends BaseAdapter {
 

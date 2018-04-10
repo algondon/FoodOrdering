@@ -17,7 +17,7 @@ import com.example.foodordering.R;
 import com.example.foodordering.weather.util.ScreenUtil;
 
 /**
- * Created by ghbha on 2016/5/14.
+ * Created by xch on 2018/3/10.
  */
 public class SunRiseView extends View {
 

@@ -10,7 +10,7 @@ import com.example.foodordering.weather.dao.greendao.WeekForeCast;
 import com.example.foodordering.weather.dao.greendao.Zhishu;
 
 /**
- * Created by ghbha on 2016/5/15.
+ * Created by xch on 2018/3/10.
  */
 public class WeatherInfo {
     private List<WeekForeCast> weekForeCasts;

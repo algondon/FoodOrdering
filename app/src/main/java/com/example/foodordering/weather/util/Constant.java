@@ -6,7 +6,7 @@ import java.util.Map;
 import com.example.foodordering.R;
 
 /**
- * Created by Suda on 2015/10/10.
+ * Created by xch on 2018/3/10.
  */
 public class Constant {
 
