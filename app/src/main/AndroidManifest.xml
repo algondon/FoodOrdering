@@ -118,6 +118,54 @@
         <!--天气-->
         <activity android:name=".weather.ui.WeatherActivity" />
         <activity android:name=".weather.ui.AlarmActivity" />
+
+
+        <meta-data
+            android:name="tencent_qq_appid"
+            android:value="222222"/>
+
+        <meta-data
+            android:name="weixin_key"
+            android:value="your weixin key"/>
+
+        <!-- 去除了微博SDK 所以不需要配置key -->
+        <!--<meta-data
+            android:name="sina_weibo_redirecturi"
+            android:value="weibo_redirecturi" />
+
+        <meta-data
+            android:name="sina_weibo_key"
+            android:value="weibo_key" />-->
+
+        <!-- 微信分享注册 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- QQ SDK 需要註冊Activity -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent222222" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+        <!-- QQ SDK 需要註冊 Activity -->
     </application>
 
 </manifest>

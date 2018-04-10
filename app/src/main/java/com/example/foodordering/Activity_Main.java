@@ -2,17 +2,22 @@ package com.example.foodordering;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -40,12 +45,18 @@ import com.example.foodordering.bean.User;
 import com.example.foodordering.fragment.Fragment_find;
 import com.example.foodordering.fragment.Fragment_home;
 import com.example.foodordering.fragment.Fragment_order;
+import com.example.foodordering.share.ShareCallBack;
 import com.example.foodordering.tools.dialog.ProgressDialog;
 import com.example.foodordering.util.GetUserData;
 import com.example.foodordering.service.RequestUtility;
 import com.example.foodordering.util.Util;
 import com.example.foodordering.zxing.android.CaptureActivity;
+import com.facebook.imageutils.BitmapUtil;
+import com.xyzlf.share.library.bean.ShareEntity;
+import com.xyzlf.share.library.interfaces.ShareConstant;
+import com.xyzlf.share.library.util.ShareUtil;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -185,10 +196,7 @@ public class Activity_Main extends BaseActivity {
                         if (!Util.checkNetwork(context)) {
                             break;
                         }
-                        String content = "http://www.yzj.yzjxiaoyue.cn/";
-                        Intent intent = new Intent().setAction(Intent.ACTION_SEND).setType("text/plain");
-                        intent.putExtra(Intent.EXTRA_TEXT, content);
-                        startActivity(Intent.createChooser(intent, "分享"));
+                        showShareDialog();
                         break;
                     case R.id.nav_exit://退出登录
                         if (statusCode == 200) {
@@ -229,6 +237,15 @@ public class Activity_Main extends BaseActivity {
                 return true;
             }
         });
+    }
+    /**
+     * 弹出分享对话框
+     */
+    public void showShareDialog() {
+        ShareEntity testBean = new ShareEntity("我是标题", "我是内容，我是内容。");
+        testBean.setUrl("http://123.207.239.170/FoodOrdering/share/img_share.jpg"); //分享链接
+        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/share/img_share.jpg");
+        ShareUtil.showShareDialog(this, testBean, ShareConstant.REQUEST_CODE);
     }
 
     /**
@@ -542,9 +559,25 @@ public class Activity_Main extends BaseActivity {
                     }
                 }
                 break;
+
+            case ShareConstant.REQUEST_CODE:
+                if (data != null) {
+                    int channel = data.getIntExtra(ShareConstant.EXTRA_SHARE_CHANNEL, -1);
+                    int status = data.getIntExtra(ShareConstant.EXTRA_SHARE_STATUS, -1);
+                    onShareCallback(channel, status);
+                }
+                break;
             default:
                 break;
         }
+    }
+    /**
+     * 分享回调处理
+     * @param channel
+     * @param status
+     */
+    private void onShareCallback(int channel, int status) {
+        new ShareCallBack().onShareCallback(channel, status);
     }
 
     /**
