@@ -64,10 +64,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--百度地图ak-->
+        <!--百度地图ak  (开发版)-->
+        <!--<meta-data-->
+            <!--android:name="com.baidu.lbsapi.API_KEY"-->
+            <!--android:value="F6NWFi7tK2PvSpHk201uazFn3W4V6p0x" />-->
+
+        <!--百度地图ak  (发布版)-->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="F6NWFi7tK2PvSpHk201uazFn3W4V6p0x" />
+            android:value="E4Fc6OC9WshwY2Z5z1v9cU65pVLnrm8R" />
 
         <activity android:name=".Activity_Main" />
         <activity android:name=".Activity_MyComment" />
@@ -107,7 +112,7 @@
         <activity android:name=".Activity_Remark" />
         <activity android:name=".Activity_FoodsCategory" />
         <activity android:name=".Activity_Location" />
-        <activity android:name=".Activity_FoodDelivery"></activity>
+        <activity android:name=".Activity_FoodDelivery"/>
 
         <!--定位用的service-->
         <service
@@ -126,7 +131,7 @@
 
         <meta-data
             android:name="weixin_key"
-            android:value="your weixin key"/>
+            android:value="wx74792e0f383432a6"/>
 
         <!-- 去除了微博SDK 所以不需要配置key -->
         <!--<meta-data
@@ -146,7 +151,7 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
 
-        <!-- QQ SDK 需要註冊Activity -->
+        <!-- QQ SDK 需要注册Activity -->
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -165,7 +170,7 @@
                 <!-- 100380359 100381104 222222 -->
             </intent-filter>
         </activity>
-        <!-- QQ SDK 需要註冊 Activity -->
+        <!-- QQ SDK 需要注册 Activity -->
     </application>
 
 </manifest>
