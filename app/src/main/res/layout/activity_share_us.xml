@@ -5,16 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.foodordering.Activity_AboutUs">
+    tools:context=".Activity_ShareUs">
 
     <include layout="@layout/title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="懒人外卖" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:text="扫码关注ChaoYoung\n长按二维码可分享给他人" />
+        android:text="扫描二维码下载App\n长按二维码可分享给他人" />
 
     <ImageView
         android:id="@+id/iv_qrcode_download"

@@ -196,7 +196,7 @@ public class Activity_Main extends BaseActivity {
                         if (!Util.checkNetwork(context)) {
                             break;
                         }
-                        showShareDialog();
+                        Activity_ShareUs.actionStart(context);
                         break;
                     case R.id.nav_exit://退出登录
                         if (statusCode == 200) {
@@ -237,15 +237,6 @@ public class Activity_Main extends BaseActivity {
                 return true;
             }
         });
-    }
-    /**
-     * 弹出分享对话框
-     */
-    public void showShareDialog() {
-        ShareEntity testBean = new ShareEntity("我是标题", "我是内容，我是内容。");
-        testBean.setUrl("http://123.207.239.170/FoodOrdering/share/img_share.jpg"); //分享链接
-        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/share/img_share.jpg");
-        ShareUtil.showShareDialog(this, testBean, ShareConstant.REQUEST_CODE);
     }
 
     /**

@@ -1,5 +1,6 @@
 package com.example.foodordering;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ public class Activity_MyComment extends BaseActivity implements SwipeRefreshLayo
     private SwipeRefreshLayout swipeRefreshLayout;
     private Adapter_Comment adapter;
     //用于刷新
+    @SuppressLint("HandlerLeak")
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {

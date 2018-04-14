@@ -27,15 +27,15 @@
             android:icon="@drawable/ic_share_white_24dp"
             android:title="分享我们" />
         <item
-            android:id="@+id/nav_aboutUs"
-            android:icon="@mipmap/nav_friends"
-            android:visible="false"
-            android:title="关于我们" />
-        <item
             android:id="@+id/nav_food_delivery"
             android:icon="@drawable/ic_drawer_help"
-            android:visible="true"
-            android:title="我去送餐" />
+            android:title="我去送餐"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@mipmap/nav_friends"
+            android:title="关于我们"
+            android:visible="true" />
 
     </group>
     <item android:title="">

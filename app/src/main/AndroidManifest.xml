@@ -25,11 +25,10 @@
     <!-- call -->
     <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
 
-
     <!-- 访问GPS定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <!--导航-->
+    <!-- 导航 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -64,12 +63,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--百度地图ak  (开发版)-->
-        <!--<meta-data-->
-            <!--android:name="com.baidu.lbsapi.API_KEY"-->
-            <!--android:value="F6NWFi7tK2PvSpHk201uazFn3W4V6p0x" />-->
+        <!-- 百度地图ak  (开发版) -->
+        <!-- <meta-data -->
+        <!-- android:name="com.baidu.lbsapi.API_KEY" -->
+        <!-- android:value="F6NWFi7tK2PvSpHk201uazFn3W4V6p0x" /> -->
 
-        <!--百度地图ak  (发布版)-->
+
+        <!-- 百度地图ak  (发布版) -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="E4Fc6OC9WshwY2Z5z1v9cU65pVLnrm8R" />
@@ -112,35 +112,36 @@
         <activity android:name=".Activity_Remark" />
         <activity android:name=".Activity_FoodsCategory" />
         <activity android:name=".Activity_Location" />
-        <activity android:name=".Activity_FoodDelivery"/>
+        <activity android:name=".Activity_FoodDelivery" />
 
-        <!--定位用的service-->
+        <!-- 定位用的service -->
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" />
 
-        <!--天气-->
+        <!-- 天气 -->
         <activity android:name=".weather.ui.WeatherActivity" />
         <activity android:name=".weather.ui.AlarmActivity" />
 
-
         <meta-data
             android:name="tencent_qq_appid"
-            android:value="222222"/>
-
+            android:value="222222" />
         <meta-data
             android:name="weixin_key"
-            android:value="wx74792e0f383432a6"/>
+            android:value="wx74792e0f383432a6" />
 
         <!-- 去除了微博SDK 所以不需要配置key -->
-        <!--<meta-data
+        <!--
+        <meta-data
             android:name="sina_weibo_redirecturi"
             android:value="weibo_redirecturi" />
 
         <meta-data
             android:name="sina_weibo_key"
-            android:value="weibo_key" />-->
+            android:value="weibo_key" />
+        -->
+
 
         <!-- 微信分享注册 -->
         <activity
@@ -150,27 +151,28 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-
         <!-- QQ SDK 需要注册Activity -->
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="behind"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="tencent222222" />
                 <!-- 100380359 100381104 222222 -->
             </intent-filter>
         </activity>
         <!-- QQ SDK 需要注册 Activity -->
+        <activity android:name=".Activity_ShareUs"></activity>
     </application>
 
 </manifest>

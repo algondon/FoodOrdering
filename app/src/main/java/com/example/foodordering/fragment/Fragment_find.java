@@ -28,6 +28,7 @@ import com.example.foodordering.Activity_FoodsCategory;
 import com.example.foodordering.R;
 import com.example.foodordering.adapter.Adapter_Find;
 import com.example.foodordering.bean.Find_Store;
+import com.example.foodordering.util.Util;
 import com.example.foodordering.weather.ui.WeatherActivity;
 
 import java.util.ArrayList;
@@ -201,6 +202,9 @@ public class Fragment_find extends Fragment implements ViewPagerEx.OnPageChangeL
                         startActivity(intent);
                         break;
                     case 1:
+                        if (!Util.checkNetwork(mContext)) {
+                            break;
+                        }
                         Intent intent2 = new Intent(mContext, WeatherActivity.class);
                         startActivity(intent2);
                         break;
