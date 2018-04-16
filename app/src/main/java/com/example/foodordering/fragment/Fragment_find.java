@@ -198,6 +198,9 @@ public class Fragment_find extends Fragment implements ViewPagerEx.OnPageChangeL
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
+                        if (!Util.checkNetwork(mContext)) {
+                            break;
+                        }
                         Intent intent = new Intent(mContext, Activity_FoodsCategory.class);
                         startActivity(intent);
                         break;
@@ -209,6 +212,9 @@ public class Fragment_find extends Fragment implements ViewPagerEx.OnPageChangeL
                         startActivity(intent2);
                         break;
                     case 2:
+                        if (!Util.checkNetwork(mContext)) {
+                            break;
+                        }
                         Toast.makeText(mContext, "敬请期待...", Toast.LENGTH_SHORT).show();
                         break;
                     default:

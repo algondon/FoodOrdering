@@ -2,21 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/comment_item_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="6dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/comment_food_img"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +43,7 @@
                 android:maxLines="1"
                 android:text="订单评价时间：2017-1-10"
                 android:textColor="@color/colorPrimary"
-                android:textSize="9sp" />
+                android:textSize="12sp" />
 
             <RatingBar
                 android:id="@+id/comment_ratingBar"
@@ -61,5 +63,12 @@
                 android:textColor="@color/blue"
                 android:textSize="16sp" />
         </LinearLayout>
+
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke"
+        android:background="@color/divider" />
+
 </LinearLayout>

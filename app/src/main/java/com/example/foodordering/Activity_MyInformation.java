@@ -18,6 +18,9 @@ import com.example.foodordering.util.Util;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
+/**
+ * 用户个人信息页面
+ */
 public class Activity_MyInformation extends BaseActivity implements View.OnClickListener {
     private TextView toolbarText;
     private CircleImageView user_img;

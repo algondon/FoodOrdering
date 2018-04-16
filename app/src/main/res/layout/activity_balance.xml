@@ -56,7 +56,6 @@
 
                     <!-- 有地址 -->
                     <RelativeLayout
-                        android:id="@+id/layout_address_info"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"

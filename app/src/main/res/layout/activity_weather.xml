@@ -23,19 +23,16 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/rl_drawerHeader"
                 android:layout_width="fill_parent"
                 android:layout_height="200.0dip">
 
                 <ImageView
-                    android:id="@+id/iv_drawerHeaderImg"
                     android:layout_width="270.0dip"
                     android:layout_height="200.0dip"
                     android:scaleType="centerCrop"
                     android:src="@drawable/nav_night" />
 
                 <TextView
-                    android:id="@+id/tv_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"

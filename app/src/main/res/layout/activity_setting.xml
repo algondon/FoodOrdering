@@ -24,7 +24,6 @@
             android:src="@drawable/ic_version_update" />
 
         <TextView
-            android:id="@+id/txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -48,7 +47,6 @@
             android:textColor="@color/secondary_text" />
 
         <ImageView
-            android:id="@+id/img_indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -104,7 +102,6 @@
 
 
     <LinearLayout
-        android:id="@+id/layout_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/spacing_major"

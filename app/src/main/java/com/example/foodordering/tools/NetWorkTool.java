@@ -108,7 +108,7 @@ public class NetWorkTool {
     public void NetworkClosedWarning(String message) {
         if (!isNewworkConnected()) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
-            builder.setIcon(R.drawable.ic_launcher);
+            builder.setIcon(R.drawable.logo);
             builder.setTitle("网络提示:");
             builder.setMessage(message);
             builder.setPositiveButton("确定", new OnClickListener() {

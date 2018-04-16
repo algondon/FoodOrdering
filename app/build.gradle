@@ -10,8 +10,8 @@ android {
         applicationId "com.example.foodordering"
         minSdkVersion 14
         targetSdkVersion 24
-        versionCode 5
-        versionName "1.5"
+        versionCode 6
+        versionName "1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -24,6 +24,9 @@ android {
         main {
             jniLibs.srcDir 'libs'
         }
+    }
+    lintOptions{
+        abortOnError false
     }
 }
 
@@ -103,5 +106,10 @@ dependencies {
     //分享
     implementation('com.xyzlf.share:sharesdk:0.0.10') {
         exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+
+    //机器人请求数据(6.0不再支持Apache HTTP client，建议使用 HttpURLConnection 代替，我是暂时不想改了)
+    android {
+        useLibrary 'org.apache.http.legacy'
     }
 }

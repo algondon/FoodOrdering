@@ -16,7 +16,6 @@
         android:minWidth="50.0dip">
 
         <ImageView
-            android:id="@+id/back_icon"
             android:layout_width="14.0dip"
             android:layout_height="16.0dip"
             android:contentDescription="@null"

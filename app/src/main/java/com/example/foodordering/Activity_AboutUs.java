@@ -60,7 +60,7 @@ public class Activity_AboutUs extends BaseActivity {
     public void showShareDialog() {
         ShareEntity testBean = new ShareEntity("关注微信公众号ChaoYoung", "关注一下，超哥就带你搞事情");
         testBean.setUrl("http://123.207.239.170/chaoyoung/"); //分享链接
-        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/qrcode/qr_chaoyoung_wxgzh.jpg");
+        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/bysj/chaoyoung_qrcode/qr_chaoyoung_wxgzh.jpg");
         ShareUtil.showShareDialog(this, testBean, ShareConstant.REQUEST_CODE);
     }
 

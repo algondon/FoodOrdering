@@ -113,6 +113,8 @@
         <activity android:name=".Activity_FoodsCategory" />
         <activity android:name=".Activity_Location" />
         <activity android:name=".Activity_FoodDelivery" />
+        <activity android:name=".rebot_tuling.Activity_RebotWeb"/>
+        <activity android:name=".rebot_tuling.Activity_RebotNews"/>
 
         <!-- 定位用的service -->
         <service

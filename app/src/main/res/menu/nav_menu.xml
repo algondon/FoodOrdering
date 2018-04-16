@@ -21,7 +21,7 @@
             android:id="@+id/nav_customer_service"
             android:icon="@mipmap/nav_location"
             android:title="客服中心"
-            android:visible="false" />
+            android:visible="true" />
         <item
             android:id="@+id/nav_share"
             android:icon="@drawable/ic_share_white_24dp"

@@ -42,8 +42,10 @@ public class Activity_ShareUs extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
         iv_qrcode_download= (ImageView) findViewById(R.id.iv_qrcode_download);
+        Glide.with(Activity_ShareUs.this).load("http://123.207.239.170/FoodOrdering/bysj/qr_download_apk/bysj_qr_download_apk.png").into(iv_qrcode_download);
 
-        Glide.with(Activity_ShareUs.this).load("http://123.207.239.170/FoodOrdering/qrcode/foodordering_apk_download.png").into(iv_qrcode_download);
+        //食品学院的
+//        Glide.with(Activity_ShareUs.this).load("http://123.207.239.170/FoodOrdering/spxy/qr_download_apk/foodordering_apk_download.png").into(iv_qrcode_download);
         iv_qrcode_download.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -58,8 +60,12 @@ public class Activity_ShareUs extends AppCompatActivity {
      */
     public void showShareDialog() {
         ShareEntity testBean = new ShareEntity("懒人外卖", "点击此推送即可下载懒人外卖App。");
-        testBean.setUrl("http://123.207.239.170/FoodOrdering/apk/foodOrdering.apk"); //分享链接
-        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/share/img_share.jpg");
+        testBean.setUrl("http://123.207.239.170/FoodOrdering/bysj/apk/foodOrdering.apk"); //apk下载链接
+        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/bysj/share/img_share.jpg");
+
+        //下面是食品学院的（虽然有点拒绝）
+//        testBean.setUrl("http://123.207.239.170/FoodOrdering/spxy/apk/foodOrdering.apk"); //分享链接
+//        testBean.setImgUrl("http://123.207.239.170/FoodOrdering/spxy/share/img_share.jpg");
         ShareUtil.showShareDialog(this, testBean, ShareConstant.REQUEST_CODE);
     }
 

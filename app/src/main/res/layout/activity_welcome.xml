@@ -7,7 +7,6 @@
     tools:context="com.example.foodordering.Activity_Welcome">
 
     <LinearLayout
-        android:id="@+id/LinearLayout01"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/white"

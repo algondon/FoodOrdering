@@ -103,7 +103,7 @@ public class Activity_Welcome extends BaseActivity {
         toggle_mobile = (ToggleButton) view.findViewById(R.id.toggle_mobile);
         button_confirm = (Button) view.findViewById(R.id.button_confirm);
         builder = new AlertDialog.Builder(Activity_Welcome.this)
-                .setIcon(R.drawable.ic_launcher).setTitle("网络连接").setView(view);
+                .setIcon(R.drawable.logo).setTitle("网络连接").setView(view);
         dialog = builder.create();//创建（打开网络或wifi）这个AlertDialog对象
         dialog.setCanceledOnTouchOutside(false);
 
@@ -158,7 +158,7 @@ public class Activity_Welcome extends BaseActivity {
 
     private void initNetDialog() {
         net_builder = new AlertDialog.Builder(Activity_Welcome.this)
-                .setIcon(R.drawable.ic_launcher).setTitle("网络提示:")
+                .setIcon(R.drawable.logo).setTitle("网络提示:")
                 .setMessage("您的网络连接未打开，请打开网络，否则将导致您无法正常使用！")
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override

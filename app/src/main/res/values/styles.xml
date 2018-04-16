@@ -14,11 +14,6 @@
     </style>
 
     <!--无标题-->
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:fitsSystemWindows">true</item>
-    </style>
     <!-- 按钮样式 -->
     <style name="btn_bg_and_text_color">
         <item name="android:layout_width">match_parent</item>
@@ -29,48 +24,12 @@
         <item name="android:textColor">@drawable/zgq_btn_text_color</item>
     </style>
     <!--评分 星星-->
-    <style name="RatingBarIndicatorTrue" parent="@android:style/Widget.RatingBar">
-        <item name="android:progressDrawable">@drawable/rating_bar</item>
-        <item name="android:maxHeight">32dp</item>
-        <item name="android:isIndicator">true</item>
-        <item name="android:minHeight">16dp</item>
-    </style>
 
     <style name="RatingBarIndicatorFalse" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/rating_bar</item>
         <item name="android:maxHeight">32dp</item>
         <item name="android:isIndicator">false</item>
         <item name="android:minHeight">16dp</item>
-    </style>
-
-    <style name="loginingDlg" parent="@android:style/Theme.Dialog">
-        <item name="android:windowIsFloating">true</item>
-        <!-- 设置窗口浮动 -->
-        <item name="android:windowFrame">@null</item>
-        <!-- 设置无边框 -->
-        <item name="android:windowNoTitle">true</item>
-        <!-- 设置无标题 -->
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <!-- 设置背景颜色 透明 -->
-        <item name="android:backgroundDimEnabled">true</item>
-        <!-- 是否模糊 -->
-        <item name="android:windowIsTranslucent">true</item>
-        <!-- 半透明 -->
-    </style>
-
-    <style name="submiting" parent="@android:style/Theme.Dialog">
-        <item name="android:windowIsFloating">true</item>
-        <!-- 设置窗口浮动 -->
-        <item name="android:windowFrame">@null</item>
-        <!-- 设置无边框 -->
-        <item name="android:windowNoTitle">true</item>
-        <!-- 设置无标题 -->
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <!-- 设置背景颜色 透明 -->
-        <item name="android:backgroundDimEnabled">true</item>
-        <!-- 是否模糊 -->
-        <item name="android:windowIsTranslucent">true</item>
-        <!-- 半透明 -->
     </style>
 
     <!--update_address-->
@@ -133,16 +92,6 @@
     </style>
 
     <!--天气-->
-    <style name="SudaWindowAnimation" parent="@android:style/TextAppearance.StatusBar.EventContent.Title">
-        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
-        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
-        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
-        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
-    </style>
-
-    <style name="AppTheme.DrawerArrowToggle" parent="@style/Base.Widget.AppCompat.DrawerArrowToggle">
-        <item name="color">@android:color/white</item>
-    </style>
 
     <style name="HomeCustomButtonStyle">
         <item name="android:textSize">12.0sp</item>

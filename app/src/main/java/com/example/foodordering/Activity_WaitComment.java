@@ -1,9 +1,12 @@
 package com.example.foodordering;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -17,6 +20,7 @@ import android.widget.Toast;
 import com.example.foodordering.control.BaseActivity;
 import com.example.foodordering.bean.Status;
 import com.example.foodordering.service.PostUtility;
+import com.example.foodordering.tools.dialog.ProgressDialog;
 import com.example.foodordering.util.Util;
 import com.google.gson.Gson;
 
@@ -27,7 +31,9 @@ public class Activity_WaitComment extends BaseActivity implements View.OnClickLi
     private String orderId, userId;
     private Button btnCommit;
     private String CommentContent;
-    private static Dialog loadDialog;
+    private ProgressDialog pg;
+    private Handler handler = new Handler();
+    private String postFormComment;
 
     public Activity_WaitComment() {
     }
@@ -36,6 +42,7 @@ public class Activity_WaitComment extends BaseActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wait_comment);
+        pg = new ProgressDialog(Activity_WaitComment.this);
         getData();
         initView();
     }
@@ -94,44 +101,72 @@ public class Activity_WaitComment extends BaseActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_commit:
+                pg.setMessage("正在提交评论...");
+                pg.show();
                 CommentContent = etCommentContent.getText().toString();
-                String rating = (int) ratingBar.getRating() + "";
+                final String rating = (int) ratingBar.getRating() + "";
                 if (!Util.checkNetwork(this)) {
+                    pg.dismiss();
                     return;
                 }
                 if (CommentContent.length() < 5) {
                     Toast.makeText(this, "您输入的评价内容至少5个字！", Toast.LENGTH_SHORT).show();
+                    pg.dismiss();
                 } else {
-                    String postForm = PostUtility.postCommitCommentOrder(orderId, userId, rating, CommentContent);
-                    if (postForm == null || postForm.isEmpty()) {
-                        Toast.makeText(this, "服务器出错，请重试！", Toast.LENGTH_SHORT).show();
-                    }
-                    if (loadDialog != null && loadDialog.isShowing()) {
-                        loadDialog.dismiss();
-                    }
-                    if (postForm.length() > 100) {
-                        Toast.makeText(this, "服务器出错，请重试！", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Gson gson = new Gson();
-                        Status status = gson.fromJson(postForm, Status.class);
-                        int statusCode = status.getStatusCode();
-                        Toast.makeText(this, status.getStatusDescription(), Toast.LENGTH_SHORT).show();
-                        if (statusCode == 200) {
-                            Intent intent = new Intent(Activity_WaitComment.this, Activity_Main.class);
-                            startActivity(intent);
-                            finish();
+                    new Thread() {
+                        @Override
+                        public void run() {
+                            super.run();
+                            postFormComment = PostUtility.postCommitCommentOrder(orderId, userId, rating, CommentContent);
+                            handler.post(runnableCommitComment);
                         }
-                    }
+                    }.start();
                 }
         }
     }
 
-    // 当用户交互改变分值时，触发该事件
-    // 该方法可以获取到 3个参数
-    // 第一个参数 当前评分修改的 ratingBar
-    // 第二个参数 当前评分分数，范围 0~星星数量
-    // 第三个参数 如果评分改变是由用户触摸手势或方向键轨迹球移动触发的，则返回true
+    Runnable runnableCommitComment = new Runnable() {
+        @Override
+        public void run() {
+            pg.dismiss();
+            if (postFormComment == null || postFormComment.isEmpty()) {
+                Toast.makeText(Activity_WaitComment.this, "服务器出错，请重试！", Toast.LENGTH_SHORT).show();
+            }
+            if (postFormComment.length() > 100) {
+                Toast.makeText(Activity_WaitComment.this, "服务器出错，请重试！", Toast.LENGTH_SHORT).show();
+            } else {
+                Gson gson = new Gson();
+                Status status = gson.fromJson(postFormComment, Status.class);
+                final int statusCode = status.getStatusCode();
 
+                final AlertDialog.Builder builder = new AlertDialog.Builder(Activity_WaitComment.this);
+                builder.setTitle("提示");
+                builder.setCancelable(false);
+                builder.setMessage(status.getStatusDescription());
+                builder.setPositiveButton(android.R.string.ok,
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                                if (statusCode == 200) {
+                                    Intent intent = new Intent(Activity_WaitComment.this, Activity_Main.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            }
+                        });
+                builder.create().show();
+            }
+        }
+    };
+
+    /**
+     * 当用户交互改变分值时，触发该事件  该方法可以获取到 3个参数
+     *
+     * @param ratingBar 第一个参数 当前评分修改的 ratingBar
+     * @param rating    当前评分分数，范围 0~星星数量
+     * @param fromUser  如果评分改变是由用户触摸手势或方向键轨迹球移动触发的，则返回true
+     */
     @Override
     public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
         switch ((int) rating) {

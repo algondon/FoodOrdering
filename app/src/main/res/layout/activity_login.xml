@@ -6,7 +6,6 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
@@ -18,7 +17,6 @@
 
 
     <RelativeLayout
-        android:id="@+id/INPUT"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15.0dip"
@@ -82,7 +80,6 @@
             android:background="#ffcacdd1" />
 
         <RelativeLayout
-            android:id="@+id/VF_Code"
             android:layout_width="fill_parent"
             android:layout_height="44.0dip"
             android:layout_below="@id/LINE2">
@@ -144,7 +141,6 @@
         android:text="登    录" />
 
     <LinearLayout
-        android:id="@+id/layout_other"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"

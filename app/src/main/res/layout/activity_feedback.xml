@@ -57,7 +57,6 @@
 
 
     <EditText
-        android:id="@+id/edit_contact_way"
         android:layout_width="match_parent"
         android:layout_height="@dimen/cell_normal"
         android:background="@color/white"

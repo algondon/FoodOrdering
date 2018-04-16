@@ -56,7 +56,6 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/rb_sex_male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:button="@drawable/sel_common_check_bg"
@@ -66,7 +65,6 @@
                     android:textSize="@dimen/font_normal" />
 
                 <RadioButton
-                    android:id="@+id/rb_sex_female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/spacing_major"

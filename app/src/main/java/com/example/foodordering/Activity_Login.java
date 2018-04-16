@@ -114,6 +114,8 @@ public class Activity_Login extends BaseActivity implements View.OnClickListener
                 Util.showToast(getApplication(), "怪我咯，我能有什么办法！");
                 break;
             case R.id.login:
+                progress = ProgressDialog.show(this, "请稍候", "正在登录...", true);
+                progress.setCancelable(false);
                 if (VerificationCode.checkVerificationCode(VF_Code.getText()
                         .toString())) {
                     userName = etUserName.getText().toString();
@@ -157,8 +159,6 @@ public class Activity_Login extends BaseActivity implements View.OnClickListener
      * 登录
      */
     private void login() {
-        progress = ProgressDialog.show(this, "请稍候", "正在登录...", true);
-        progress.setCancelable(false);
         new Thread() {
             public void run() {
                 try {
