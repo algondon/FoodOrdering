@@ -131,7 +131,7 @@
             android:value="222222" />
         <meta-data
             android:name="weixin_key"
-            android:value="wx74792e0f383432a6" />
+            android:value="wx96f7c02bd3aec8be" />
 
         <!-- 去除了微博SDK 所以不需要配置key -->
         <!--

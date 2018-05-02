@@ -162,7 +162,8 @@ public class Activity_OrderComplete extends BaseActivity implements View.OnClick
                 Activity_BusinessInfo.actionStart(context);
                 break;
             case R.id.ly_contact_CustomerService://联系客服
-                Toast.makeText(context, "敬请期待...", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(context,Activity_Customer_Service.class);
+                startActivity(intent);
                 break;
             default:
                 break;

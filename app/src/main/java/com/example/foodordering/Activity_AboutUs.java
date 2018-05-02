@@ -43,7 +43,7 @@ public class Activity_AboutUs extends BaseActivity {
         }
         iv_qrcode_download= (ImageView) findViewById(R.id.iv_qrcode_download);
 
-        Glide.with(Activity_AboutUs.this).load("http://123.207.239.170/FoodOrdering/qrcode/qr_chaoyoung_wxgzh.jpg").into(iv_qrcode_download);
+        Glide.with(Activity_AboutUs.this).load("http://123.207.239.170/FoodOrdering/bysj/chaoyoung_qrcode/qr_chaoyoung_wxgzh.jpg").into(iv_qrcode_download);
 
         iv_qrcode_download.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

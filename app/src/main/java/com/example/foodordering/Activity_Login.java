@@ -111,7 +111,7 @@ public class Activity_Login extends BaseActivity implements View.OnClickListener
                 startActivity(intent);
                 break;
             case R.id.tv_forget_password:
-                Util.showToast(getApplication(), "怪我咯，我能有什么办法！");
+                Util.showToast(getApplication(), "敬请期待...");
                 break;
             case R.id.login:
                 progress = ProgressDialog.show(this, "请稍候", "正在登录...", true);
@@ -127,22 +127,28 @@ public class Activity_Login extends BaseActivity implements View.OnClickListener
                     if (!"".equals(userName) && !"".equals(pwd)) {
                         login();
                     } else if (userName.toString().length() == 0) {
+                        progress.dismiss();
                         Util.showToast(Activity_Login.this, "您的手机号码不能为空，请注意输入!");
                         return;
                     } else if (pwd.toString().length() == 0) {
+                        progress.dismiss();
                         Util.showToast(Activity_Login.this, "您的密码不能为空，请注意输入!");
                         return;
                     } else if (pwd.toString().length() < 6) {
+                        progress.dismiss();
                         Util.showToast(Activity_Login.this, "您的密码位数不能少于6位");
                         return;
                     } else if (pwd.toString().length() > 16) {
+                        progress.dismiss();
                         Util.showToast(Activity_Login.this, "您的密码位数不能多于16位");
                         return;
                     } else {
+                        progress.dismiss();
                         Util.showToast(Activity_Login.this, "您的账户和密码不能为空，请注意输入!");
                         return;
                     }
                 } else {
+                    progress.dismiss();
                     Toast.makeText(Activity_Login.this, "验证码错误，请重新输入！",
                             Toast.LENGTH_LONG).show();
                     Image_Code.setImageBitmap(VerificationCode
@@ -206,7 +212,7 @@ public class Activity_Login extends BaseActivity implements View.OnClickListener
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btn_wxLogin://微信登录
-                    Util.showToast(getApplication(), "微信登录是不可能的了\n这辈子都不可能的了");
+                    Util.showToast(getApplication(), "敬请期待...");
                     break;
                 case R.id.btn_msgCheckLogin://短信验证码登录
                     Util.showToast(getApplication(), "敬请期待...");

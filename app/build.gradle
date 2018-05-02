@@ -10,8 +10,8 @@ android {
         applicationId "com.example.foodordering"
         minSdkVersion 14
         targetSdkVersion 24
-        versionCode 6
-        versionName "1.6"
+        versionCode 9
+        versionName "1.9"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
