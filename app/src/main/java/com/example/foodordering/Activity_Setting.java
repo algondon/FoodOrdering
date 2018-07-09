@@ -110,7 +110,7 @@ public class Activity_Setting extends BaseActivity implements View.OnClickListen
                     public void run() {
                         try {
                             //并没有检查，只是沉睡一秒
-                            sleep(1000);
+                            sleep(10000);
                             Message message = handler.obtainMessage();
                             message.what =1;
                             message.arg1=123;

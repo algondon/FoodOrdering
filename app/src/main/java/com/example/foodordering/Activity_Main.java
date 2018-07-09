@@ -524,7 +524,7 @@ public class Activity_Main extends BaseActivity {
                             Activity_FoodsDetails.actionStart(context, Integer.parseInt(foodId.trim()));
                         } else {
                             final android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Activity_Main.this);
-                            builder.setTitle("扫描懒人外卖专用二维码有惊喜哟,不过也可以告诉你,你扫描到的内容是：");
+                            builder.setTitle("请扫描懒人外卖专用二维码,你扫描到的内容是：");
                             builder.setCancelable(false);
                             builder.setMessage(content);
                             builder.setPositiveButton(android.R.string.ok,

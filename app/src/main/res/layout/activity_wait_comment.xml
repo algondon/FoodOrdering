@@ -36,6 +36,7 @@
             android:id="@+id/tv_tip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:padding="20px"
             android:text="优秀"
             android:textSize="40px" />
@@ -47,6 +48,7 @@
         android:background="@color/white"
         android:orientation="vertical"
         android:paddingLeft="20px"
+        android:paddingRight="20px"
         android:paddingTop="20px">
 
         <TextView
@@ -80,13 +82,13 @@
 
     <Button
         android:id="@+id/btn_commit"
-        style="@style/btn_bg_and_text_color"
+        style="@style/Widget.LazyOrder.Button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="60px"
-        android:padding="5px"
-        android:text="提交评价"
-        android:textSize="40px" />
+        android:layout_height="@dimen/cell_normal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="提交评价" />
 </LinearLayout>
 
 
