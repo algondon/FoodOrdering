@@ -10,7 +10,7 @@
 <div> 
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/shoppingcar.png" width="30%" height="30%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/find.png" width="30%" height="30%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/nav.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/nav.png" width="30%" height="30%">
 </div>
 
 ### 食品详情
@@ -24,10 +24,9 @@
 
 ### 订餐
 <div> 
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/balance.png" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/payment.png" width="35%" height="35%">
-<br>
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/order_complete.png" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/balance.png" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/payment.png" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/order_complete.png" width="30%" height="30%">
 </div> 
 
 ### 地址管理
@@ -38,10 +37,9 @@
 
 ### 地图定位和送餐导航
 <div> 
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/location.jpg" width="35%" height="35%">
-<br>
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/songcan.png" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/navigat.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/location.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/songcan.png" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/navigat.png" width="30%" height="30%">
 </div>
 
 ### 个人信息管理
@@ -52,10 +50,9 @@
 
 ### 智能客服助手
 <div>
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/kefu.jpg" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu_list.jpg" width="35%" height="35%">
-<br>
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/kefu.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu_list.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu.jpg" width="30%" height="30%">
 </div>
 
 ### 分享功能

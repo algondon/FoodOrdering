@@ -35,7 +35,7 @@
             android:id="@+id/nav_aboutUs"
             android:icon="@mipmap/nav_friends"
             android:title="关于我们"
-            android:visible="false" />
+            android:visible="true" />
 
     </group>
     <item android:title="">
