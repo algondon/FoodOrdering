@@ -44,8 +44,8 @@
 
 ### 个人信息管理
 <div>
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/user_info.jpg" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/modf_info.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/user_info.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/modf_info.jpg" width="30%" height="30%">
 </div>
 
 ### 智能客服助手
@@ -56,7 +56,7 @@
 </div>
 
 ### 分享功能
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/share.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/share.jpg" width="30%" height="35%">
 
 ### 二维码扫描
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/qrcode_scan.jpg" width="35%" height="35%">
