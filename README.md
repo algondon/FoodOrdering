@@ -38,20 +38,26 @@
 </div>
 
 ### 地图定位和送餐导航
+<div> 
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/location.jpg" width="35%" height="35%">
 <br>
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/songcan.png" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/navigat.jpg" width="35%" height="35%">
+</div>
 
 ### 个人信息管理
+<div>
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/user_info.jpg" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/modf_info.jpg" width="35%" height="35%">
+</div>
 
 ### 智能客服助手
+<div>
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/kefu.jpg" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu_list.jpg" width="35%" height="35%">
 <br>
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu.jpg" width="35%" height="35%">
+</div>
 
 ### 分享功能
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/share.jpg" width="35%" height="35%">
