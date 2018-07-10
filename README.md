@@ -1,5 +1,5 @@
 # FoodOrdering
-外卖点餐app，包含了基本订餐流程（支付方式未实现）。此外还集成了二维码扫描，当前定位城市天气查询，智能客服助手（图灵机器人），调用第三方地图导航，微信分享等功能
+外卖点餐App，主要功能包括：登录、注册、订餐（支付方式为模拟支付）、订单管理、订单评价、用户信息管理、收货地址管理、地图定位、视频监控、送餐导航、智能客服助手（图灵机器人）、二维码扫描、微信分享、App扫码下载、当前定位城市天气查询等功能。
 
 ### 功能模块
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/function.jpg" width="70%" height="35%">
@@ -14,12 +14,12 @@
 </div>
 
 ### 食品详情
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/food_description.png" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/food_description.png" width="30%" height="30%">
 
 ### 登录 注册
 <div> 
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/login.png" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/regist.png" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/login.png" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/regist.png" width="30%" height="30%">
 </div>
 
 ### 订餐
@@ -31,13 +31,13 @@
 
 ### 地址管理
 <div> 
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/address_list.jpg" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/update_address.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/address_list.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/update_address.jpg" width="30%" height="30%">
 </div>
 
 ### 地图定位和送餐导航
 <div> 
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/location.jpg" width="30%" height="30%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/location.png" width="30%" height="30%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/songcan.png" width="30%" height="30%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/navigat.png" width="30%" height="30%">
 </div>
@@ -56,10 +56,10 @@
 </div>
 
 ### 分享功能
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/share.jpg" width="30%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/share.jpg" width="30%" height="30%">
 
 ### 二维码扫描
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/qrcode_scan.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/qrcode_scan.jpg" width="30%" height="30%">
 
 后台管理有菜品二维码：[去后台](http://123.207.239.170/OrderFoodApp)
 
