@@ -9,7 +9,7 @@
 ### 首页
 <div> 
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/shoppingcar.png" width="35%" height="35%">
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/find.jpg" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/find.png" width="35%" height="35%">
 <br>
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/nav.jpg" width="35%" height="35%">
 </div>
@@ -18,18 +18,24 @@
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/food_description.png" width="35%" height="35%">
 
 ### 登录 注册
+<div> 
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/login.png" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/regist.png" width="35%" height="35%">
+</div>
 
 ### 订餐
+<div> 
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/balance.png" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/payment.png" width="35%" height="35%">
 <br>
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/order_complete.png" width="35%" height="35%">
+</div> 
 
 ### 地址管理
+<div> 
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/address_list.jpg" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/update_address.jpg" width="35%" height="35%">
+</div>
 
 ### 地图定位和送餐导航
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/location.jpg" width="35%" height="35%">
@@ -45,7 +51,7 @@
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/kefu.jpg" width="35%" height="35%">
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu_list.jpg" width="35%" height="35%">
 <br>
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu.png" width="35%" height="35%">
+<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/caipu.jpg" width="35%" height="35%">
 
 ### 分享功能
 <img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/share.jpg" width="35%" height="35%">
