@@ -68,4 +68,4 @@ ps：如果哪天App没数据了，后台管理404了，可能是我养不住服
 
 ***
 更多技术干货，欢迎关注我的公众号：ChaoYoung
-<img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/qrcode_chaoyoung.jpg" width="20%" height="20%">
+<br><img src="https://github.com/yangxch/FoodOrdering/raw/master/screenshot/qrcode_chaoyoung.jpg" width="20%" height="20%">
